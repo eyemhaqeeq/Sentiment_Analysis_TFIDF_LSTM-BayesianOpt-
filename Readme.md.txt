@@ -17,7 +17,7 @@ Stopword removal using NLTK
 
 Lemmatization with spaCy
 
-Vectorization using TF-IDF with max_features=5000
+Vectorization using TF-IDF with max_features=15000
 
 Model Architecture
 A simple feedforward neural network is used in place of LSTM due to TF-IDF producing non-sequential feature vectors:
@@ -48,11 +48,10 @@ Epochs: 5
 Validation split: 10% of training set
 
 Results
-Accuracy: 0.866
-
-Training Time: 7.23 seconds
-
+Accuracy: 0.9089999794960022
+Training Time: 5.879679441452026
 Testing Time: 0.82 seconds
+Testing Time: 0.45168352127075195
 
 These results indicate that TF-IDF is a competitive representation technique for binary sentiment classification when used with a Dense Neural Network.
 
